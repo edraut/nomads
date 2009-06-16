@@ -1,0 +1,10 @@
+<div class="container">
+	<div class="logo">&nbsp;</div>
+	<div id="search">
+		<% search_path = (params[:controller] =~ /^admin/) ? admin_items_path : items_path %>
+		<% form_tag search_path, :method => :get do %>
+			<%= text_field_tag 'search_terms' %>
+			<%= submit_tag 'SEARCH', {:id => 'search_button'} %>
+		<% end %>
+	</div>
+</div>

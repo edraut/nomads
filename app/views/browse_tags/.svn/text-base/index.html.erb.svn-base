@@ -1,0 +1,24 @@
+<h1>Listing browse_tags</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Parent</th>
+    <th>Position</th>
+  </tr>
+
+<% for browse_tag in @browse_tags %>
+  <tr>
+    <td><%=h browse_tag.name %></td>
+    <td><%=h browse_tag.parent_id %></td>
+    <td><%=h browse_tag.position %></td>
+    <td><%= link_to 'Show', browse_tag %></td>
+    <td><%= link_to 'Edit', edit_browse_tag_path(browse_tag) %></td>
+    <td><%= link_to 'Destroy', browse_tag, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New browse_tag', new_browse_tag_path %>

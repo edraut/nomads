@@ -1,0 +1,22 @@
+&nbsp;<br/>
+<h1>New size group</h1>
+
+<% form_for([:admin, @size_group]) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+	<p>
+		<%= link_to_remote 'Add a size to this group', :update => 'new_sizes_list', :position => :bottom, :url => new_admin_size_path(:size_group_id => @size_group.id) %> (keep clicking to add more sizes)
+	</p>
+	<p>
+		<ul id="new_sizes_list"></ul>
+	</p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+

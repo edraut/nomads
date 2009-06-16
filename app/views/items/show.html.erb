@@ -1,0 +1,65 @@
+<% if !@item.item_color_photos.empty? %>
+	<div id="main_item_photo" class="column span-15 first last">
+		<%= image_tag(@item.item_color_photo.public_filename) %>
+	</div>
+	<% if @item.item_color_photos.length > 1 %>
+		<div class="column span-15 first last">Shown in <%= @item.item_color_photos.first.attachable.name %></div>
+		<div class="column span-15 first last">&nbsp;</div>
+		<div class="column span-5 first">
+			<% for item_color in @item.item_colors %>
+				<div class="column span 3 first">
+					<% if item_color.item_color_photos.length > 0 %>
+						<%= link_to_remote image_tag(item_color.item_color_photos.first.public_filename(:thumb)), :update => 'main_item_photo', :url => attachment_path(item_color.item_color_photos.first), :method => :get %>
+					<% end %>
+				</div>
+				<div class="column span 2 last">
+					<%= item_color.name %>
+				</div>
+			<% end %>
+		</div>
+	<% else %>
+		<div class="column span-15 first last">&nbsp;</div>
+	<% end %>
+<% end %>
+<div class="column span-10 last">
+	<div class="column span-5 first">
+		<div class="float-left">
+			<b><%= @item.name %></b><br/>
+		</div>
+		<div class="float-right">
+			<%= @item.brand.name %>
+		</div>
+	</div>
+	<div class="column span-5 last">
+		<div class="float-right text-right">
+			<% if @item.on_sale %>
+				<del><%= @item.price.format %></del><br/>
+				<span class="brown">On Sale <%= @item.sale_price.format %></span>
+			<% else %>
+				<%= @item.price.format %>
+			<% end %>
+		</div>
+	</div>
+
+	<div class="column span-10 item_content_border">
+	  <%=h @item.description %>
+	</div>
+	<div class="column span-10 first last">&nbsp;</div>
+
+	<div class="column span-5 first">
+		<% unless @item.sizes.empty? %>
+			<b>Available sizes:</b><br/>
+			<% for size in @item.sizes %>
+				<%= size.name %><br/>
+			<% end %>
+		<% end %>
+	</div>
+	<div class="column span-5 last">
+		<% unless @item.item_fabrics.empty? %>
+			<b>Available Fabrics:</b><br/>
+			<% for fabric in @item.item_fabrics %>
+				<%= fabric.name %><br/>
+			<% end %>
+		<% end %>
+	</div>
+</div>

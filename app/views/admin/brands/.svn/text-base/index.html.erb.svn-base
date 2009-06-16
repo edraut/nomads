@@ -1,0 +1,24 @@
+&nbsp;<br/>
+
+<div class="column span-19 first last">
+	<div class="column span-15 first"><h1>Brands List</h1></div>
+	<div class="column span-4 last text-right"></div>
+</div>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+<tbody id="brand_list">
+<% for brand in @brands %>
+  <tr id="brand_<%= brand.id %>" class="sortable">
+    <td><%=h brand.name %></td>
+    <td><%= link_to 'Show', [:admin, brand] %></td>
+    <td><%= link_to 'Edit', edit_admin_brand_path(brand) %></td>
+    <td><%= link_to 'Delete', [:admin, brand], :confirm => "Are you sure? This will delete all products with the brand #{brand.name}" , :method => :delete %></td>
+  </tr>
+<% end %>
+</tbody>
+</table>
+<%= sortable_element("brand_list", :url => {:controller => 'admin/brands', :action => 'update'}, :only => 'sortable', :tag => 'tr', :with => "'id=multiple&method=put&' + Sortable.serialize('brand_list')") %>
+<br />

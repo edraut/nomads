@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/nomads/!svn/ver/46/head/vendor/plugins/criteriaquery/lib
+END
+join.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/nomads/!svn/ver/46/head/vendor/plugins/criteriaquery/lib/join.rb
+END
+table_alias.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nomads/!svn/ver/46/head/vendor/plugins/criteriaquery/lib/table_alias.rb
+END
+expressions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nomads/!svn/ver/46/head/vendor/plugins/criteriaquery/lib/expressions.rb
+END
+query.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/nomads/!svn/ver/46/head/vendor/plugins/criteriaquery/lib/query.rb
+END
+criteria_query.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/nomads/!svn/ver/46/head/vendor/plugins/criteriaquery/lib/criteria_query.rb
+END
+filterable.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nomads/!svn/ver/46/head/vendor/plugins/criteriaquery/lib/filterable.rb
+END

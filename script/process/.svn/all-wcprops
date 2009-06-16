@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/nomads/!svn/ver/1/head/script/process
+END
+spawner
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/nomads/!svn/ver/1/head/script/process/spawner
+END
+inspector
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/nomads/!svn/ver/1/head/script/process/inspector
+END
+reaper
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/nomads/!svn/ver/1/head/script/process/reaper
+END

@@ -1,0 +1,17 @@
+&nbsp;<br/>
+<h1>New color</h1>
+<% form_for([:admin,@color]) do |f| %>
+	<p>
+		<ul id="new_colors_list">
+			<%= render :partial => 'new_li', :object => Color.new %>
+		</ul>
+	</p>
+	<p>
+		<%= link_to_remote 'Add another color', :update => 'new_colors_list', :position => :bottom, :url => new_admin_color_path(:partial => true) %> (keep clicking to add more colors)
+	</p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', admin_colors_path %>

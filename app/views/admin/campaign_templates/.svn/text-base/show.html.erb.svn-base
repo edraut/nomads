@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @campaign_template.name %>
+</p>
+
+<p>
+  <b>Partial:</b>
+  <%=h @campaign_template.partial %>
+</p>
+
+
+<%= link_to 'Edit', edit_campaign_template_path(@campaign_template) %> |
+<%= link_to 'Back', campaign_templates_path %>

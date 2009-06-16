@@ -1,0 +1,6 @@
+&nbsp;<br/>
+<p>
+  <b>Name:</b>
+  <%=h @color.name %>
+</p>
+

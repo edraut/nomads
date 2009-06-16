@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/nomads/!svn/ver/3/head/vendor/gems/money/lib/bank
+END
+variable_exchange_bank.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/nomads/!svn/ver/3/head/vendor/gems/money/lib/bank/variable_exchange_bank.rb
+END
+no_exchange_bank.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nomads/!svn/ver/3/head/vendor/gems/money/lib/bank/no_exchange_bank.rb
+END

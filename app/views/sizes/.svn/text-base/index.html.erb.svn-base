@@ -1,0 +1,22 @@
+<h1>Listing sizes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Size group</th>
+  </tr>
+
+<% for size in @sizes %>
+  <tr>
+    <td><%=h size.name %></td>
+    <td><%=h size.size_group_id %></td>
+    <td><%= link_to 'Show', size %></td>
+    <td><%= link_to 'Edit', edit_size_path(size) %></td>
+    <td><%= link_to 'Destroy', size, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New size', new_size_path %>

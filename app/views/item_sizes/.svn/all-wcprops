@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/nomads/!svn/ver/1/head/app/views/item_sizes
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/nomads/!svn/ver/1/head/app/views/item_sizes/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/nomads/!svn/ver/1/head/app/views/item_sizes/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/nomads/!svn/ver/1/head/app/views/item_sizes/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/nomads/!svn/ver/1/head/app/views/item_sizes/show.html.erb
+END

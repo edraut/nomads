@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/nomads/!svn/ver/67/head/app/models
+END
+color.rb
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/nomads/!svn/ver/1/head/app/models/color.rb
+END
+campaign.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/nomads/!svn/ver/59/head/app/models/campaign.rb
+END
+campaign_image.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/nomads/!svn/ver/59/head/app/models/campaign_image.rb
+END
+size_group.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/nomads/!svn/ver/26/head/app/models/size_group.rb
+END
+editor.rb
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/nomads/!svn/ver/1/head/app/models/editor.rb
+END
+page_main_photo.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/nomads/!svn/ver/2/head/app/models/page_main_photo.rb
+END
+browse_tag.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/nomads/!svn/ver/46/head/app/models/browse_tag.rb
+END
+campaign_text_block.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/nomads/!svn/ver/59/head/app/models/campaign_text_block.rb
+END
+item.rb
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/nomads/!svn/ver/64/head/app/models/item.rb
+END
+item_fabric.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/nomads/!svn/ver/64/head/app/models/item_fabric.rb
+END
+item_photo.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/nomads/!svn/ver/1/head/app/models/item_photo.rb
+END
+page.rb
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/nomads/!svn/ver/64/head/app/models/page.rb
+END
+user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/nomads/!svn/ver/1/head/app/models/user.rb
+END
+men.rb
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/nomads/!svn/ver/1/head/app/models/men.rb
+END
+pending_page.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/nomads/!svn/ver/22/head/app/models/pending_page.rb
+END
+sml_size.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/nomads/!svn/ver/1/head/app/models/sml_size.rb
+END
+women.rb
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/nomads/!svn/ver/1/head/app/models/women.rb
+END
+fabric.rb
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/nomads/!svn/ver/2/head/app/models/fabric.rb
+END
+brand.rb
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/nomads/!svn/ver/1/head/app/models/brand.rb
+END
+attachment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/nomads/!svn/ver/64/head/app/models/attachment.rb
+END
+item_size.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/nomads/!svn/ver/1/head/app/models/item_size.rb
+END
+shoe_size.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/nomads/!svn/ver/1/head/app/models/shoe_size.rb
+END
+item_color.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/nomads/!svn/ver/64/head/app/models/item_color.rb
+END
+mens_tag.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/nomads/!svn/ver/2/head/app/models/mens_tag.rb
+END
+customer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/nomads/!svn/ver/1/head/app/models/customer.rb
+END
+womens_tag.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/nomads/!svn/ver/2/head/app/models/womens_tag.rb
+END
+item_color_photo.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/nomads/!svn/ver/48/head/app/models/item_color_photo.rb
+END
+page_content_image.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/nomads/!svn/ver/67/head/app/models/page_content_image.rb
+END
+item_browse_tag.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/nomads/!svn/ver/46/head/app/models/item_browse_tag.rb
+END
+campaign_template.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/nomads/!svn/ver/59/head/app/models/campaign_template.rb
+END
+size.rb
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/nomads/!svn/ver/26/head/app/models/size.rb
+END
+published_page.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/nomads/!svn/ver/22/head/app/models/published_page.rb
+END
+one_size.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/nomads/!svn/ver/1/head/app/models/one_size.rb
+END

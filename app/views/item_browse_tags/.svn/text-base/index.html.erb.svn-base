@@ -1,0 +1,22 @@
+<h1>Listing item_browse_tags</h1>
+
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Type</th>
+  </tr>
+
+<% for item_browse_tag in @item_browse_tags %>
+  <tr>
+    <td><%=h item_browse_tag.item_id %></td>
+    <td><%=h item_browse_tag.type %></td>
+    <td><%= link_to 'Show', item_browse_tag %></td>
+    <td><%= link_to 'Edit', edit_item_browse_tag_path(item_browse_tag) %></td>
+    <td><%= link_to 'Destroy', item_browse_tag, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New item_browse_tag', new_item_browse_tag_path %>

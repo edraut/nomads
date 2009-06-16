@@ -1,0 +1,22 @@
+<h1>Listing campaign_templates</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Partial</th>
+  </tr>
+
+<% for campaign_template in @campaign_templates %>
+  <tr>
+    <td><%=h campaign_template.name %></td>
+    <td><%=h campaign_template.partial %></td>
+    <td><%= link_to 'Show', campaign_template %></td>
+    <td><%= link_to 'Edit', edit_campaign_template_path(campaign_template) %></td>
+    <td><%= link_to 'Destroy', campaign_template, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New campaign_template', new_campaign_template_path %>

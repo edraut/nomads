@@ -1,0 +1,3 @@
+<li id="sub_tag_<%= show_li.id %>">
+	<%= show_li.name %>
+</li>

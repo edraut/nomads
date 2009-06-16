@@ -1,0 +1,25 @@
+<% 	attachment_name = attachment_type.underscore
+		attachment_assoc = attachment_name.pluralize.to_sym
+		attachment = edit_li.send(attachment_assoc).first
+		name = edit_li.name
+		this_id = edit_li.id
+%>
+<% if attachment %>
+	<div>
+		current image for <%= name %>
+	</div>
+	<div>
+		<%= image_tag attachment.public_filename(:thumb) %>
+	</div>
+	<p>
+		<%= radio_button_tag attachment_name + "_action[#{this_id}]", 'keep', true %>keep<br/>
+	  <%= radio_button_tag attachment_name + "_action[#{this_id}]", 'delete' %>or delete<br/>
+		<%= radio_button_tag attachment_name + "_action[#{this_id}]", 'update' %>or upload a new photo
+	</p>
+<% else %>
+	upload a new photo for <%= name %> :</br>
+<% end %>
+
+  <%= file_field_tag (attachment_name.pluralize + "[#{this_id}][uploaded_data]") %>
+<br/>
+<hr/>

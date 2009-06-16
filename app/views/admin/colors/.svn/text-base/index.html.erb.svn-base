@@ -1,0 +1,24 @@
+&nbsp;<br/>
+
+<div class="column span-19 first last">
+	<div class="column span-15 first"><h1>Color List</h1></div>
+	<div class="column span-4 last text-right"></div>
+</div>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+<% for color in @colors %>
+  <tr>
+    <td><%=h color.name %></td>
+    <td><%= link_to 'Show', [:admin,color] %></td>
+    <td><%= link_to 'Edit', edit_admin_color_path(color) %></td>
+    <td><%= link_to 'Delete', [:admin,color], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+

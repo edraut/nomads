@@ -1,0 +1,22 @@
+
+<% form_tag login_path do %>
+<div class="column span-17 first last">
+	<div class="column span-3 first">User Name:</div>
+	<div class="column span-14 last"> <%= text_field_tag 'user_name'%> </div>
+</div>
+<div class="column span-17 first last">
+	<div class="column span-3 first">Password:</div>
+	<div class="column span-14 last"> <%= password_field_tag 'password' %> </div>
+</div>
+<div class="column span-17 first last">
+	<div class="column span-3 first">&nbsp;</div>
+	<div class="column span-14 last"><%= submit_tag "SIGN IN", {:class => 'submit'} %> </div>
+</div>
+<% end %>
+<br/>&nbsp;
+<div class="column span-17 first last">
+		<div class="column span-14 prepend-3 last"> 
+			<%= link_to 'Forgot your password?', forgot_password_path %>
+		</div>
+</div>
+<%= javascript_tag("$('user_name').focus()"); %>

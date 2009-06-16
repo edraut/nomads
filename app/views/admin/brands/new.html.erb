@@ -1,0 +1,16 @@
+&nbsp;<br/>
+<h1>New brand</h1>
+<% form_for([:admin,@brand]) do |f| %>
+	<p>
+		<ul id="new_brands_list">
+			<%= render :partial => 'new_li', :object => Brand.new %>
+		</ul>
+	</p>
+	<p>
+		<%= link_to_remote 'Add another brand', :update => 'new_brands_list', :position => :bottom, :url => new_admin_brand_path(:partial => true) %> (keep clicking to add more brands)
+	</p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+

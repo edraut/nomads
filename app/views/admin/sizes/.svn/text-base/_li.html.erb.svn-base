@@ -1,0 +1,5 @@
+<p>
+  <b>Edit this size:</b>
+  <%= text_field_tag ("existing_size[#{li.id}][name]", li.name) %>
+	<b>or delete it:</b> <%= check_box_tag ("existing_size[#{li.id}][delete]") %>
+</p>

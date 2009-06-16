@@ -1,0 +1,22 @@
+<h1>Listing item_sizes</h1>
+
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Size</th>
+  </tr>
+
+<% for item_size in @item_sizes %>
+  <tr>
+    <td><%=h item_size.item_id %></td>
+    <td><%=h item_size.size_id %></td>
+    <td><%= link_to 'Show', item_size %></td>
+    <td><%= link_to 'Edit', edit_item_size_path(item_size) %></td>
+    <td><%= link_to 'Destroy', item_size, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New item_size', new_item_size_path %>

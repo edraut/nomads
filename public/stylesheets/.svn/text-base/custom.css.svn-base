@@ -1,0 +1,235 @@
+body {
+	background: white;
+	margin: 0;
+	color: #555;
+}
+h1 {
+	padding-top: 0;
+	font-size: 18px;
+}
+pre {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.big {font-size: 16px;}
+.bold {font-weight: bold;}
+.small {font-size: 10px;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+.float-left {float: left;}
+.float-right {float: right;}
+.pad_left {padding-left: 5px;}
+.brown {color: #695720;}
+}input, textarea, select {
+/*  margin:0.5em 0;*/
+  border:1px solid #888888;
+	border-style: solid;
+	margin:0.5em 0;
+	height: expression(this.type=='submit'?2em:1.2em);
+	width: expression(this.type=='submit'?75px:300px);
+	padding:2px; 
+	}
+input, select {
+	font-size:1em;
+	
+}
+input { color: expression(this.type=="button"?'red':'black'); }
+input:focus, input:focus,
+textarea:focus, select:focus {
+  border:1px solid #666;
+}
+textarea { width: 390px; height: 250px; padding:2px; }
+a, a.hover, a.focus {
+	text-decoration: none;
+}
+input.narrow {
+	width: 12em;
+}
+#page_top {
+	width: 831px;
+	float: left;
+	clear: none;
+}
+#page_top, #shop_left_wrapper {
+	background: #af983c;
+}
+#shop_left_wrapper {
+	width: 169px;
+}
+#shop_left_wrapper, #shop_right {
+	height: 1200px;
+}
+#page_top_image {
+	background: transparent;
+	margin: 0 0 0 102px;
+}
+#page_top_right {
+	position: relative;
+	float: left;
+	clear: right;
+	height: 341px;
+	color: white;
+}
+#shop_right {
+	float: right;
+	clear: right;
+}
+#page_top_right, #shop_right {
+	background-color: #91baa8;
+	width: 114px;	
+	padding: 0 0 0 5px;
+}
+.logo {
+	position:relative;
+	float:left;
+	clear: none;
+	width: 234px;
+	height: 39px;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='/images/logo.png');
+}
+.logo[class] {
+  background-image:url('../images/logo.png');
+	background-repeat: none;
+}
+
+#search {
+	position:relative;
+	float:left;
+	clear: none;
+	width: 716px;
+	text-align: right;
+}
+#search_button {
+	color: white;
+	background: #556668;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #888888;
+	height: 1.8em;
+	font-size: 1em;
+	padding: 0;
+	width: 75px;
+}
+#nav_left, #nav_left_admin {
+	position: relative;
+	float: left;
+	clear: left;
+	background-color: #695720;
+	width: 159px;
+	color: white;
+	padding-left: 10px;
+}
+#nav_left {
+	line-height: 0;
+}
+#nav_left_admin {
+	line-height: 1.5em;
+}
+#nav_right {
+	background-color: #f3a81d;
+	position:relative;
+	float:left;
+	clear:right;
+	width: 766px;
+	padding: 0 0 0 15px;
+	overflow: visible;
+}
+#nav_right a:focus,
+#nav_right a:hover {
+	color: white;
+}
+#nav_right a, a.quiet_link {
+	color: #444444;
+	margin: 0 1em;
+}
+ a.quiet_link:focus, a.quiet_link:hover {
+	color: black;
+}
+#nav_left, #nav_left_admin, #nav_right {
+	height: 15px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+a#current_tab {
+	color: white;
+}
+#white_square {
+	margin-right: -8px;
+}
+.third_admin_nav_active a, .admin_sub_nav_active a {
+	color: #777777;
+}
+#sign_up_input {
+	width: 130px;
+}
+.short_text_area {
+	height: 5em;
+}
+.wide_text_area {
+	width: 500px;
+}
+ul.browse_nav, ul.browse_nav_top, ul.brand_nav_top {
+	list-style: none outside none;
+}
+ul.browse_nav {
+	margin: 0 0 0 10px;
+}
+ul.browse_nav_top {
+	margin: 0;
+}
+ul.brand_nav_top {
+	margin: 8px 0 0 5px;
+}
+ul.browse_nav a, ul.browse_nav_top a{
+	color: #af983c;
+}
+li.current_browse_tag {
+	color: #695720;
+}
+.browse_nav, .light_brown {
+	color: #af983c;
+}
+ul.brand_nav_top, ul.brand_nav_top a{
+	color: white;
+}
+li.current_brand_tag {
+	color: #695720;
+}
+div.item_list_cell, div.item_list_cell_last {
+	border: 1px solid #CCCCCC;
+	width: 190px;
+	height: 310px;
+}
+div.item_list_cell {
+	margin: 7px 7px 0 0;
+}
+div.item_list_cell_last {
+	margin: 7px 0 0 0;
+}
+div.item_list_content {
+	width: 190px;
+	margin: 0;
+	padding: 0;
+	height: 190px;
+}
+div.item_list_content_width {
+	width: 180px;
+	padding: 0 5px;
+}
+div.item_content_border {
+	margin-top: 10px;
+	padding: 2px 5px;
+	width: 378px;
+	border: 1px solid #CCCCCC;
+	
+}
+.thumbnail_height {
+	height: 90px;
+}
+.homepage_featured_item_height {
+	height: 190px;
+}
+.right-side-content-image {
+	margin: 0 0 15px 10px;
+}

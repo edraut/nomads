@@ -1,0 +1,40 @@
+<%= will_paginate(@items) %>
+<div class="column span-15 first last">
+<% 	column = {0 => {}, 1 => {}, 2 => {}}
+ 		column[0][:class] = 'item_list_cell column span-5 first '
+		column[1][:class] = 'column span-5 item_list_cell'
+		column[2][:class] = 'column span-5 item_list_cell_last last'
+%>
+<% @items.each_with_index do |item,index| %>
+<div class="<%= column[index % 3][:class] %>">
+	<div class="column span-5 item_list_content">
+	<% if !item.item_color_photos.empty? %>
+		<%= link_to image_tag(item.item_color_photo.public_filename(:medium_thumb)), item_path(item, :browse_tag_id => @browse_tag_id, :gender => @gender, :price_range => @price_range, :brand_id => @brand_id) %>
+	<% end %>
+	</div>
+	<div class="column span-5 item_list_content_width">
+		<div class="float-left">
+			<b><%= item.name %></b><br/>
+		</div>
+		<div class="float-right">
+			<% if item.on_sale %>
+				<span class="brown">On Sale</span>
+			<% end %>
+		</div>
+	</div>
+	<div class="column span-5 item_list_content_width">
+		<div class="float-left">
+			<%= item.brand.name %>
+		</div>
+		<div class="float-right">
+			<% if item.on_sale %>
+				<del><%= item.price.format %></del><br/>
+				<span class="brown"><%= item.sale_price.format %></span>
+			<% else %>
+				<%= item.price.format %>
+			<% end %>
+		</div>
+	</div>
+</div>
+<% end %>
+</div>

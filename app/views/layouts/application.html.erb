@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Nomads <%= case controller.controller_name
+										when 'pages'
+											@page.name
+										when 'items'
+											if @item
+												@item.name
+											else
+												'Items'
+											end
+										else
+											'Administration'
+										end %></title>
+  <%= stylesheet_link_tag 'blueprint/screen.css' %>
+  <%= stylesheet_link_tag 'custom.css' %>
+  <!--[if IE]><link rel="stylesheet" href="/stylesheets/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+
+	<%= javascript_include_tag :defaults %>
+</head>
+<body>
+	&nbsp;<br/>
+	<%= render :partial => 'layouts/logo_search' %>
+	<% 	if match_result = params[:controller].match(/^admin\/(.*)/)
+		 		this_nav = 'admin_navigation'
+				if (params[:action] == 'show') and (params[:controller] == 'admin/pending_pages')
+					this_header = match_result[1]
+					this_header.sub!('pending_','')
+				else
+					this_header = 'admin_header'
+				end
+			else
+				this_nav = 'navigation'
+				this_header = params[:controller]
+			end
+		%>
+	<%= render :partial => 'layouts/' + this_header %>
+	<%= render :partial => 'layouts/' + this_nav %>
+	<div class="container">
+			<% 	if params[:controller] == 'items' %>
+				<div class="column span-5 first">
+					<div id="shop_left_wrapper">
+						<%= image_tag 'Shop_left.jpg' %>
+						<div class="pad_left">
+							<%= render :partial => '/users/new' %>
+						</div>
+					</div>
+			<% elsif params[:controller] == 'pages' or (params[:controller] == 'admin/pending_pages' and params[:action] == 'show') %>
+				&nbsp;<br/>
+				<div class="column span-4 append-1 first">
+					<%= render :partial => '/users/new' %>
+			<% else %>
+				<div class="column span-5 first">
+					&nbsp;
+			<% end %>
+		</div>
+		<% col_span = (params[:controller] == 'items') ? 'span-15' : 'span-19 last'%>
+		<div class="column <%= col_span %>">
+			<% if params[:controller] == 'items' %>
+				<div class="column span-15 first last browse_nav">
+					<div class="column span-2 first quiet">
+						Look in:
+					</div>
+					<div class="column span-4">
+						<%= print_nav_tree(@browse_tag) %>
+					</div>
+					<div class="column span-1 quiet">
+						for
+					</div>
+					<div class="column span-4">
+						<%= print_gender_tree(@gender) %>
+					</div>
+					<div class="column span-4 last">
+						<%= print_price_tree(@price_range) %>
+					</div>
+				</div>
+			<% end %>
+			<% if flash[:notice] and (flash[:notice].length > 0) %>
+				<p class="notice"><%= flash[:notice] %></p>
+			<% end %>
+			<%= yield  %>
+			<%= render :partial => 'layouts/footer' %>
+
+		</div>
+		<% 	if params[:controller] == 'items' %>
+		  <div class="column span-4 last">
+				<div id="shop_right">
+					<% if @browse_in_progress %>
+						<%= print_brand_list(@brand) %>
+					<% end %>
+				</div>
+				<div class="float-right">
+					<% if @browse_in_progress %>
+						by: &nbsp;
+					<% end %>
+				</div>
+			</div>
+		<% end %>
+		
+	</div>
+</body>
+</html>

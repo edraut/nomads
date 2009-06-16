@@ -1,0 +1,19 @@
+<p>
+<%= link_to 'Preview this campaign', campaign_path(@campaign) %> <br/>Copy this link for setting up this campaign in <%= link_to 'Campaign Monitor', 'http://app.campaignmonitor.com', :target => '_blank' %>: <br/><%=h campaign_url(@campaign).gsub(/http:\/\//,'') %>
+</p>
+<p>
+  <b>Name:</b>
+  <%=h @campaign.name %>
+</p>
+
+<p>
+  <b>Campaign template:</b>
+  <%=h @campaign.campaign_template.name %>
+</p>
+<% for text_block in @campaign.campaign_text_blocks %>
+	<p>
+		<b> <%= text_block.name %> </b><br/>
+		<pre><%= text_block.body %></pre>
+	</p>
+		
+<% end %>

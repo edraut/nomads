@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/nomads/!svn/ver/43/head/app/views/admin/fabrics
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/nomads/!svn/ver/43/head/app/views/admin/fabrics/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/nomads/!svn/ver/43/head/app/views/admin/fabrics/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/nomads/!svn/ver/43/head/app/views/admin/fabrics/new.html.erb
+END
+_new_li.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/nomads/!svn/ver/40/head/app/views/admin/fabrics/_new_li.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/nomads/!svn/ver/43/head/app/views/admin/fabrics/show.html.erb
+END
+_show_li.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/nomads/!svn/ver/28/head/app/views/admin/fabrics/_show_li.html.erb
+END

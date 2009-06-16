@@ -1,0 +1,58 @@
+9
+
+dir
+112
+http://go-redbird-go.com/svn/nomads/head/vendor/rails/railties/lib/rails_generator/generators/components
+http://go-redbird-go.com/svn/nomads
+
+
+
+2008-06-11T16:34:44.192676Z
+1
+svn
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+80984100-786a-e1ba-aa13-b07f1d53d64b
+
+model
+dir
+
+scaffold
+dir
+
+integration_test
+dir
+
+controller
+dir
+
+observer
+dir
+
+resource
+dir
+
+mailer
+dir
+
+migration
+dir
+
+session_migration
+dir
+
+plugin
+dir
+

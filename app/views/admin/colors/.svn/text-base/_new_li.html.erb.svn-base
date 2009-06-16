@@ -1,0 +1,4 @@
+<p>
+  <b>Add a color:</b>
+  <%= text_field_tag ('color[][name]') %>
+</p>

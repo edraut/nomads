@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/nomads/!svn/ver/105/head/app/views/layouts
+END
+_shop_right.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/nomads/!svn/ver/11/head/app/views/layouts/_shop_right.html.erb
+END
+_admin_navigation.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nomads/!svn/ver/105/head/app/views/layouts/_admin_navigation.html.erb
+END
+browse_tags.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/nomads/!svn/ver/46/head/app/views/layouts/browse_tags.html.erb
+END
+campaign_text_blocks.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nomads/!svn/ver/59/head/app/views/layouts/campaign_text_blocks.html.erb
+END
+_items.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/nomads/!svn/ver/11/head/app/views/layouts/_items.html.erb
+END
+_shop_left.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/nomads/!svn/ver/11/head/app/views/layouts/_shop_left.html.erb
+END
+_logo_search.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/nomads/!svn/ver/64/head/app/views/layouts/_logo_search.html.erb
+END
+campaign_templates.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nomads/!svn/ver/59/head/app/views/layouts/campaign_templates.html.erb
+END
+_footer.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/nomads/!svn/ver/1/head/app/views/layouts/_footer.html.erb
+END
+_pages.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/nomads/!svn/ver/46/head/app/views/layouts/_pages.html.erb
+END
+_navigation.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/nomads/!svn/ver/46/head/app/views/layouts/_navigation.html.erb
+END
+_admin_header.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/nomads/!svn/ver/22/head/app/views/layouts/_admin_header.html.erb
+END
+_auth.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/nomads/!svn/ver/11/head/app/views/layouts/_auth.html.erb
+END
+campaigns.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/nomads/!svn/ver/59/head/app/views/layouts/campaigns.html.erb
+END
+application.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/nomads/!svn/ver/104/head/app/views/layouts/application.html.erb
+END

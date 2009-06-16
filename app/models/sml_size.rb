@@ -1,0 +1,2 @@
+class SmlSize < Size
+end

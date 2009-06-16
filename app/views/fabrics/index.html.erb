@@ -1,0 +1,20 @@
+<h1>Listing fabrics</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+<% for fabric in @fabrics %>
+  <tr>
+    <td><%=h fabric.name %></td>
+    <td><%= link_to 'Show', fabric %></td>
+    <td><%= link_to 'Edit', edit_fabric_path(fabric) %></td>
+    <td><%= link_to 'Destroy', fabric, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New fabric', new_fabric_path %>

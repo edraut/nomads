@@ -1,0 +1,13 @@
+<p>
+  <b>Item:</b>
+  <%=h @item_color.item_id %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%=h @item_color.color_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_item_color_path(@item_color) %> |
+<%= link_to 'Back', item_colors_path %>

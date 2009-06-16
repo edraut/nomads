@@ -1,0 +1,6 @@
+<li id="attachment_<%= show_li.id %>">
+	<div>
+		image for <%= show_li.attachable.name %>
+	</div>
+	<%= image_tag show_li.public_filename(:thumb) %>
+</li>

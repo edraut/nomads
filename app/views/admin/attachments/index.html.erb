@@ -1,0 +1,21 @@
+&nbsp;<br/>
+<h1>Listing colors</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+<% for color in @colors %>
+  <tr>
+    <td><%=h color.name %></td>
+    <td><%= link_to 'Show', [:admin,color] %></td>
+    <td><%= link_to 'Edit', edit_admin_color_path(color) %></td>
+    <td><%= link_to 'Delete', [:admin,color], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New color', new_admin_color_path %>

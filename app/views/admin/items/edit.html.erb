@@ -1,0 +1,111 @@
+<h1>Editing item</h1>
+
+<% form_for([:admin,@item], :html => {:multipart => true}) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description, :class => 'short_text_area' %>
+  </p>
+	<div class="column span-19 first last">
+		<div class="column span-4 first">
+		  <p>
+		    <%= f.label :price %><br />
+		    <%= f.text_field :price, :value => @item.price.to_s, :maxlength => 10 %>
+		  </p>
+		  <p>
+		    <%= f.label :brand_id %><br />
+		    <%= f.select :brand_id, Brand.find(:all, :order => 'position asc').collect{|brand| [brand.name,brand.id]} %>
+		  </p>
+		</div>
+
+		<div class="column span-5">
+			<p>
+				<label for="size_group_select">Sizes</label><br/>
+				<%= select :size_group, :id, SizeGroup.find(:all).collect{|sg| [sg.name, sg.id]} %>
+			</p>
+
+			<div id="size_select">
+				<% for size in @item.sizes.first.size_group.sizes %>
+					<%= render :partial => 'admin/sizes/select', :object => size, :locals => {:selected => (@item.sizes.include? size)} %>
+				<% end if @item.sizes.length > 0%>
+			</div>
+			&nbsp;<br/>
+		</div>
+
+		<div class="column span-5">
+			<p>
+				<label for="fabric_select">Fabrics</label><br/>
+					<ul id="existing_colors_list">
+						<%= render :partial => 'admin/item_fabrics/edit', :collection => @item.item_fabrics %>
+					</ul>
+					<%= link_to_remote 'Add a fabric to this item', :update => 'new_fabrics_list', :position => :bottom, :url => new_admin_item_fabric_path %> (keep clicking to add more fabrics)
+				<ul id="new_fabrics_list"></ul>
+				<%# select_tag 'fabrics[]', options_for_select(Fabric.find(:all).collect{|fabric| [fabric.name, fabric.id]}, @item.fabrics.collect{|fabric| fabric.id}), :id => 'fabric_select', :multiple => true %>
+			</p>
+			&nbsp;<br/>
+		</div>
+		<div class="columm span-5 last">
+			<p>
+				<label for="color_select">Colors</label><br/>
+					<ul id="existing_colors_list">
+						<%= render :partial => 'admin/item_colors/edit', :collection => @item.item_colors %>
+					</ul>
+					<%= link_to_remote 'Add a color to this item', :update => 'new_colors_list', :position => :bottom, :url => new_admin_item_color_path %> (keep clicking to add more colors)
+				<ul id="new_colors_list"></ul>
+				<%# select_tag 'colors[]', options_for_select(Color.find(:all).collect{|color| [color.name,color.id]}, @item.colors.collect{|color| color.id}), :id => 'color_select', :multiple => true %>
+			</p>
+		</div>
+	</div>
+	<div class="column span-19 first last">
+		<div class="column span-4 first">
+		  <p>
+		    <%= f.label :home_page_feature %><br />
+		    <%= f.check_box :home_page_feature %>
+		  </p>
+		</div>
+		<div class="column span-4 first">
+		  <p>
+		    <%= f.label :active %><br />
+		    <%= f.check_box :active %>
+		  </p>
+		</div>
+		<div class="column span-4 first">
+		  <p>
+		    <%= f.label :on_sale%><br />
+		    <%= f.check_box :on_sale %>
+		  </p>
+			<div id="sale_price" <% unless @item.on_sale? %> style="display: none;" <% end %> >
+		    <%= f.label :sale_price%><br />
+		    $<%= f.text_field :sale_price, :maxlength => 7 %>
+		  </div>
+		</div>
+		<div id="item_color_photos_div" class="column span-7 last" <% if @item.item_colors.empty? %> style="display: none;" <% end %>>
+			<p>
+				<label for="item_color_photos">Photos for Colors</label>
+				<ul id="item_color_photos">
+					<%= render :partial => 'admin/attachments/edit_li', :collection => @item.item_colors, :locals => {:attachment_type => 'ItemColorPhoto'} %>
+				</ul>
+			</p>
+		</div>
+	</div>
+	&nbsp;<br/>
+	<div class="column span-19 first last">
+		<div class="column span-4 first">
+			<%= f.select :gender, GENDERS %>
+		</div>
+		<div class="column span-4">
+			<%= select_tag 'browse_tags[]', options_for_select(BrowseTag.list_in_order.collect{|browse_tag| [('-' * browse_tag.ancestors.length) + browse_tag.name,browse_tag.id]}, @item.item_browse_tags.collect{|bt|bt.browse_tag_id}), :multiple => true  %>
+		</div>
+		
+	</div>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+<%= observe_field :size_group_id, :url => admin_sizes_path(:size_select => true), :method => 'GET',:update => :size_select, :with => 'size_group_id' %>
+<%= observe_field :item_on_sale, :function => visual_effect(:toggle_appear, 'sale_price', :duration => 0.5) %>

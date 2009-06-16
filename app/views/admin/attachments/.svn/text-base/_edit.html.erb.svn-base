@@ -1,0 +1,23 @@
+<% 	attachment = edit
+		attachment_name = attachment.class.name.underscore
+		attachment_id = attachment.id
+		attachment_id ||= Time.now.to_i
+%>
+<% if attachment.new_record? %>
+<% else %>
+	<div>
+		current <%= attachment_name.gsub(/_/,' ') %> for <%= attachment.attachable.name %> <%= attachment.attachable.class.name.underscore.gsub(/_/,' ') %>
+	</div>
+	<div>
+		<%= image_tag attachment.public_filename(:thumb) %>
+	</div>
+	<p>
+		<%= radio_button_tag attachment_name + "_action[#{attachment_id}]", 'keep', true %>keep<br/>
+	  <%= radio_button_tag attachment_name + "_action[#{attachment_id}]", 'delete' %>or delete<br/>
+		<%= radio_button_tag attachment_name + "_action[#{attachment_id}]", 'update' %>or upload a new photo
+	</p>
+<% end %>
+
+  <%= file_field_tag (attachment_name.pluralize + "[#{attachment_id}][uploaded_data]") %>
+<br/>
+<hr/>

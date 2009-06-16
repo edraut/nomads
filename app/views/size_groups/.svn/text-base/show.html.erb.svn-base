@@ -1,0 +1,8 @@
+<p>
+  <b>Name:</b>
+  <%=h @size_group.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_size_group_path(@size_group) %> |
+<%= link_to 'Back', size_groups_path %>

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/nomads/!svn/ver/46/head/vendor/gems/will_paginate/lib/will_paginate
+END
+named_scope.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/nomads/!svn/ver/46/head/vendor/gems/will_paginate/lib/will_paginate/named_scope.rb
+END
+array.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/nomads/!svn/ver/46/head/vendor/gems/will_paginate/lib/will_paginate/array.rb
+END
+version.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/nomads/!svn/ver/46/head/vendor/gems/will_paginate/lib/will_paginate/version.rb
+END
+finder.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/nomads/!svn/ver/46/head/vendor/gems/will_paginate/lib/will_paginate/finder.rb
+END
+core_ext.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/nomads/!svn/ver/46/head/vendor/gems/will_paginate/lib/will_paginate/core_ext.rb
+END
+collection.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nomads/!svn/ver/46/head/vendor/gems/will_paginate/lib/will_paginate/collection.rb
+END
+named_scope_patch.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/nomads/!svn/ver/46/head/vendor/gems/will_paginate/lib/will_paginate/named_scope_patch.rb
+END
+view_helpers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nomads/!svn/ver/46/head/vendor/gems/will_paginate/lib/will_paginate/view_helpers.rb
+END

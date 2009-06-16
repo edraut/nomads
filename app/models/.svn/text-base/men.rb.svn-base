@@ -1,0 +1,2 @@
+class Men < ItemGender
+end

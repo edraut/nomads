@@ -1,0 +1,2 @@
+class WomensTag < ItemBrowseTag
+end

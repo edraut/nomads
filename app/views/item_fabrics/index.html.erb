@@ -1,0 +1,22 @@
+<h1>Listing item_fabrics</h1>
+
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Fabric</th>
+  </tr>
+
+<% for item_fabric in @item_fabrics %>
+  <tr>
+    <td><%=h item_fabric.item_id %></td>
+    <td><%=h item_fabric.fabric_id %></td>
+    <td><%= link_to 'Show', item_fabric %></td>
+    <td><%= link_to 'Edit', edit_item_fabric_path(item_fabric) %></td>
+    <td><%= link_to 'Destroy', item_fabric, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New item_fabric', new_item_fabric_path %>

@@ -1,0 +1,22 @@
+<h1>Listing campaign_text_blocks</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Body</th>
+  </tr>
+
+<% for campaign_text_block in @campaign_text_blocks %>
+  <tr>
+    <td><%=h campaign_text_block.name %></td>
+    <td><%=h campaign_text_block.body %></td>
+    <td><%= link_to 'Show', campaign_text_block %></td>
+    <td><%= link_to 'Edit', edit_campaign_text_block_path(campaign_text_block) %></td>
+    <td><%= link_to 'Destroy', campaign_text_block, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New campaign_text_block', new_campaign_text_block_path %>

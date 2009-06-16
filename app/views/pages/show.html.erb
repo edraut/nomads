@@ -1,0 +1,6 @@
+<div class="column span-19 first last">
+	<div class="float-right right-side-content-image">
+	<%= render :partial => @page.partial %>
+	</div>
+ <%= RedCloth.new( @page.body ).to_html %>
+</div>

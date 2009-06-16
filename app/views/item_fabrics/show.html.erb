@@ -1,0 +1,13 @@
+<p>
+  <b>Item:</b>
+  <%=h @item_fabric.item_id %>
+</p>
+
+<p>
+  <b>Fabric:</b>
+  <%=h @item_fabric.fabric_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_item_fabric_path(@item_fabric) %> |
+<%= link_to 'Back', item_fabrics_path %>

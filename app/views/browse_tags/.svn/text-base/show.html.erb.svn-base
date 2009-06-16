@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @browse_tag.name %>
+</p>
+
+<p>
+  <b>Parent:</b>
+  <%=h @browse_tag.parent_id %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%=h @browse_tag.position %>
+</p>
+
+
+<%= link_to 'Edit', edit_browse_tag_path(@browse_tag) %> |
+<%= link_to 'Back', browse_tags_path %>

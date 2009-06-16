@@ -1,0 +1,2 @@
+class ShoeSize < Size
+end

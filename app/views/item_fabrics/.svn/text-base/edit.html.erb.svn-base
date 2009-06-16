@@ -1,0 +1,20 @@
+<h1>Editing item_fabric</h1>
+
+<% form_for(@item_fabric) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :item_id %><br />
+    <%= f.text_field :item_id %>
+  </p>
+  <p>
+    <%= f.label :fabric_id %><br />
+    <%= f.text_field :fabric_id %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @item_fabric %> |
+<%= link_to 'Back', item_fabrics_path %>

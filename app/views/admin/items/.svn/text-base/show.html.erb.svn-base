@@ -1,0 +1,104 @@
+<div class="column span-19 first last">
+	<div class="column span-10 first">
+		<p>
+		  <b>Name:</b>
+		  <%=h @item.name %>
+		</p>
+
+		<p>
+		  <b>Desc:</b>
+		  <%=h @item.description %>
+		</p>
+	</div>
+</div>
+<div class="column span-19 first last">
+	<div class="column span-4 first">
+
+		<p>
+		  <b>Price:</b>
+		  <%=h @item.price.format %>
+		</p>
+
+		<p>
+		  <b>Brand:</b>
+		  <%=h @item.brand.name %>
+		</p>
+	</div>
+
+	<div class="column span-5">
+
+		<label for="item_sizes">Sizes:</label>
+		<ul id="item_sizes">
+		<%= render :partial => 'admin/sizes/show_li', :collection => @item.sizes %>
+		</ul>
+	</div>
+
+	<div class="column span-5">
+		<label for="item_fabric">Fabrics:</label>
+		<ul id="item_fabric">
+			<%= render :partial => 'admin/item_fabrics/show_li', :collection => @item.item_fabrics %>
+		</ul>
+	</div>
+
+	<div class="column span-5 last">
+		<label for="item_color">Colors:</label> <span class="small quiet">drag and drop to sort</span>
+		<ul id="item_colors">
+			<%= render :partial => 'admin/item_colors/show_li', :collection => @item.item_colors %>
+		</ul>
+	</div>
+	<% javascript_tag do %>
+		function createSortable() {
+		  	Sortable.create('item_colors',{onUpdate:function(){new Ajax.Request('/admin/item_colors/update', {asynchronous:true, evalScripts:true, parameters:'id=multiple&method=put&' + Sortable.serialize("item_colors")})}});
+		}
+		createSortable();
+	<% end %>
+</div>
+<div class="column span-19 first last">
+	<div class="column span-4 first">
+		<p>
+		  <b>Home Page Feature:</b>
+		  <%=h @item.home_page_feature? ? 'YES' : 'NO' %>
+		</p>
+	</div>
+
+	<div class="column span-5">
+
+		<p>
+		  <b>Active:</b>
+		  <%=h @item.active? ? 'YES' : 'NO' %>
+		</p>
+	</div>
+
+	<div class="column span-5">
+
+		<p>
+		  <b>On Sale:</b>
+		  <%=h @item.on_sale? ? 'YES' : 'NO' %>
+		</p>
+
+		<% if @item.on_sale? %>
+			<p>
+				<b>Sale Price:</b>
+				<%=h @item.sale_price.format %>
+			</p>
+		<% end %>
+	</div>
+	<div class="column span-5 last">
+		<p>
+	    <b>Photos:</b>
+			<ul id="item_color_photos">
+	    <%= render :partial => 'admin/attachments/show_li', :collection => @item.item_colors.collect{|item_color| item_color.item_color_photos.first}.compact, :locals => { :attachable_parent_name => 'color'} %>
+			</ul>
+	  </p>
+	</div>
+</div>
+<div class="column span-19 first last">
+	<div class="column span-4 first">
+		<b>Gender</b><br/>
+		<%= @item.gender %>
+	</div>
+	<div class="column span-4">
+		<b>Browse Tags</b><br/ >
+		<%= @item.browse_tags.collect{|browse_tag| browse_tag.name}.join('<br/>') %>
+	</div>
+</div>

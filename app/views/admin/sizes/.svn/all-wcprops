@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/nomads/!svn/ver/85/head/app/views/admin/sizes
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/nomads/!svn/ver/26/head/app/views/admin/sizes/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/nomads/!svn/ver/42/head/app/views/admin/sizes/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/nomads/!svn/ver/26/head/app/views/admin/sizes/new.html.erb
+END
+_new_li.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/nomads/!svn/ver/85/head/app/views/admin/sizes/_new_li.html.erb
+END
+_select.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/nomads/!svn/ver/28/head/app/views/admin/sizes/_select.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/nomads/!svn/ver/26/head/app/views/admin/sizes/show.html.erb
+END
+_li.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/nomads/!svn/ver/26/head/app/views/admin/sizes/_li.html.erb
+END
+_show_li.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/nomads/!svn/ver/26/head/app/views/admin/sizes/_show_li.html.erb
+END

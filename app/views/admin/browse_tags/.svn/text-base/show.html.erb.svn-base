@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @browse_tag.name %>
+</p>
+
+<p>
+  <b>Sub Categories:</b> <span class="small quiet">drag and drop to sort</span><br/>
+
+<ul id="tag_list">
+<%= render :partial => 'admin/browse_tags/show_li', :collection =>  @browse_tag.children %>
+</ul>
+<% javascript_tag do %>
+	function createSortable() {
+	  	Sortable.create('tag_list',{onUpdate:function(){new Ajax.Request('/admin/browse_tags/update', {asynchronous:true, evalScripts:true, parameters:'id=multiple&method=put&' + Sortable.serialize("tag_list")})}});
+	}
+	createSortable();
+<% end %>
+</p>

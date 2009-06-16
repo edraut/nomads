@@ -1,0 +1,31 @@
+&nbsp;<br/>
+
+<div class="column span-19 first last">
+	<div class="column span-15 first"><h1>Item List</h1></div>
+	<div class="column span-4 last text-right"></div>
+</div>
+<%= will_paginate @items %>
+<table>
+  <tr>
+    <th><%= link_to 'Name', admin_items_path(:search_terms => params[:search_terms], :order_by => 'lower(name) asc') %></th>
+    <th><%= link_to 'Brand', admin_items_path(:search_terms => params[:search_terms], :order_by => 'brand_id asc') %></th>
+    <th><%= link_to 'Active', admin_items_path(:search_terms => params[:search_terms], :order_by => 'active desc') %></th>
+    <th><%= link_to 'Featured', admin_items_path(:search_terms => params[:search_terms], :order_by => 'home_page_feature desc') %></th>
+  </tr>
+
+<% for item in @items %>
+  <tr>
+    <td><%=h item.name %></td>
+    <td><%=h item.brand.name %></td>
+    <td><%=h item.active ? 'Yes' : 'No' %></td>
+    <td><%=h item.home_page_feature ? 'Yes' : 'No' %></td>
+    <td><%= link_to 'Show', [:admin,item] %></td>
+    <td><%= link_to 'Edit', edit_admin_item_path(item) %></td>
+    <td><%= link_to 'Delete', [:admin,item], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+

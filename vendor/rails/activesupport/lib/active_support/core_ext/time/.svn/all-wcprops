@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/nomads/!svn/ver/1/head/vendor/rails/activesupport/lib/active_support/core_ext/time
+END
+zones.rb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/nomads/!svn/ver/1/head/vendor/rails/activesupport/lib/active_support/core_ext/time/zones.rb
+END
+behavior.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/nomads/!svn/ver/1/head/vendor/rails/activesupport/lib/active_support/core_ext/time/behavior.rb
+END
+calculations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/nomads/!svn/ver/1/head/vendor/rails/activesupport/lib/active_support/core_ext/time/calculations.rb
+END
+conversions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/nomads/!svn/ver/1/head/vendor/rails/activesupport/lib/active_support/core_ext/time/conversions.rb
+END

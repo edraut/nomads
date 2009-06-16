@@ -1,0 +1,4 @@
+<p>
+  <b>Add a sub-category:</b>
+  <%= text_field_tag ('sub_tags[][name]') %>
+</p>

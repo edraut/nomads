@@ -1,0 +1,48 @@
+&nbsp;<br/>
+<div class="column span-18 prepend-1 first last"><hr/></div>
+<% if @parent.parent %>
+<div class="column span-19 first last">
+		<%= link_to 'Back to <br/>' + @parent.parent.name, admin_browse_tags_path(:parent_id => @parent.parent.id) %>
+</div>
+&nbsp;<br/>
+<% end %>
+<div class="column span-19 first last">
+	<div class="column span-10 first">
+		<% if @parent.id == 1 %>
+			<span class="big bold"><%= @parent.name %></span>
+		<% else %>
+			<% form_for([:admin,@parent]) do |f| %>
+			  <%= f.error_messages %>
+
+			  <p>
+			    Browse Tag <%= f.label :name %><br />
+			    <%= f.text_field :name %>
+			  </p>
+			  <p>
+			    <%= f.submit "Update" %>
+			  </p>
+			<% end %>
+		<% end %>
+	</div>
+	<div class="column span-9 text-right last">
+		<%= link_to 'New Browse Tag under <br/>' + @parent.name, new_admin_browse_tag_path(:parent_id => @parent.id) %>
+	</div>
+</div>
+&nbsp;<br/>
+<h1>Browse tags under <%= @parent.name %> </h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+<tbody id="tag_list">
+<% for browse_tag in @browse_tags %>
+  <tr class="sortable" id="tag_<%= browse_tag.id %>">
+    <td><%=h browse_tag.name %></td>
+    <td><%= link_to 'Edit', admin_browse_tags_path(:parent_id => browse_tag.id) %></td>
+    <td><%= link_to 'Delete', [:admin,browse_tag], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</tbody>
+</table>
+<%= sortable_element("tag_list", :url => {:controller => 'admin/browse_tags', :action => 'update'}, :only => 'sortable', :tag => 'tr', :with => "'id=multiple&method=put&' + Sortable.serialize('tag_list')") %>

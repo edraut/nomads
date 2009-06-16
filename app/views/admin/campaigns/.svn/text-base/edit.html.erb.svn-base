@@ -1,0 +1,39 @@
+<h1>Editing campaign</h1>
+
+<% form_for([:admin,@campaign]) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :campaign_template %><br />
+    <%= f.select :campaign_template_id, CampaignTemplate.find(:all).collect{|ct| [ct.name,ct.id]} %>
+  </p>
+	<p id="campaign_text_block_p">
+		<span class="quiet small">See instructions at the bottom of this page.</span>
+		<ul id="campaign_text_blocks">
+			<%= render :partial => 'admin/campaign_text_blocks/new_from_template', :collection => @campaign.campaign_text_blocks %>
+		</ul>
+	</p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+<p>
+
+<u>Styling</u><br/>
+Surround words with asterisks to get *<b>bold</b>*, underscores to get _<i>italics</i>_<br/>
+<u>Links</u><br/>
+If you want to link to a specific web address, you can do it like this:<br/>
+"Go to Google":http://google.com<br/>
+The part inside the quotes is what people will see for a link, the part after the first colon is the web address.<br/>
+	<u>Special Codes</u> <br/>
+	<b>[email]</b> will be replaced with the recipient's email address<br/>
+	<b>&lt;webversion&gt;website.&lt;/webversion&gt;</b> will be replaced with a link to the web version of this email (on campaign monitor's website)<br/>
+	<b>&lt;unsubscribe&gt;Unsubscribe ...&lt;/unsubscribe&gt;</b> will be replaced with a link to unsubscribe. <br/>
+	<b>&lt;a href="http://imanomad.com"&gt;Nomads&lt;/a&gt;</b> will be replaced with a link to the nomads web site.<br/>
+	In general you can edit anything else in these boxes, but you probably want to leave these special codes as they are, or ask for help if you need to change them.
+</p>
+<%= observe_field :campaign_campaign_template_id, :url => new_admin_campaign_text_block_path, :with => "'container_type=Campaign&campaign_template_id=' + value", :method => 'GET', :update => :campaign_text_blocks, :complete => visual_effect(:appear, 'campaign_text_block_p', :duration => 0.5) %>

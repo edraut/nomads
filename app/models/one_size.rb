@@ -1,0 +1,2 @@
+class OneSize < Size
+end

@@ -1,0 +1,13 @@
+<% 	if attachable_parent_name
+			parent = new_li.send attachable_parent_name
+			name = parent.name
+			this_id = parent.id
+		else
+			name = new_li.name
+			this_id = new_li.id
+		end
+%>
+<li>
+  <b>Upload A Photo <% if name %> for <%= name %> <% end %>:</b>
+  <%= file_field_tag (attachment_type.pluralize + "[#{this_id}][uploaded_data]") %>
+</li>

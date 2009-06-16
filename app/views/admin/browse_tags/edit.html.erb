@@ -1,0 +1,13 @@
+<h1>Editing browse tag</h1>
+
+<% form_for([:admin,@browse_tag]) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/nomads/!svn/ver/1/head/app/views/brands
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/nomads/!svn/ver/1/head/app/views/brands/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/nomads/!svn/ver/1/head/app/views/brands/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/nomads/!svn/ver/1/head/app/views/brands/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/nomads/!svn/ver/1/head/app/views/brands/show.html.erb
+END

@@ -1,0 +1,13 @@
+<p>
+  <b>Item:</b>
+  <%=h @item_browse_tag.item_id %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%=h @item_browse_tag.type %>
+</p>
+
+
+<%= link_to 'Edit', edit_item_browse_tag_path(@item_browse_tag) %> |
+<%= link_to 'Back', item_browse_tags_path %>

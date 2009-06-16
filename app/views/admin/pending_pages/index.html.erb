@@ -1,0 +1,23 @@
+&nbsp;<br/>
+<h1>Edit Page Content</h1>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Body</th>
+		<th>Unpublished Changes?</th>
+  </tr>
+
+<% for page in @pages %>
+  <tr>
+    <td><%=h page.name %></td>
+    <td><%=h page.body %></td>
+		<td><%= page.dirty ? 'Yes' : 'No' %>
+    <td><%= link_to 'Show', admin_pending_page_path(page.id, :page_name => page.name) %></td>
+    <td><%= link_to 'Edit', edit_admin_pending_page_path(page) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New page', new_admin_pending_page_path %>

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/nomads/!svn/ver/1/head/vendor/rails/railties/bin
+END
+console
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/nomads/!svn/ver/1/head/vendor/rails/railties/bin/console
+END
+server
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/nomads/!svn/ver/1/head/vendor/rails/railties/bin/server
+END
+dbconsole
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/nomads/!svn/ver/1/head/vendor/rails/railties/bin/dbconsole
+END
+destroy
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/nomads/!svn/ver/1/head/vendor/rails/railties/bin/destroy
+END
+runner
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/nomads/!svn/ver/1/head/vendor/rails/railties/bin/runner
+END
+about
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/nomads/!svn/ver/1/head/vendor/rails/railties/bin/about
+END
+generate
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/nomads/!svn/ver/1/head/vendor/rails/railties/bin/generate
+END
+rails
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/nomads/!svn/ver/1/head/vendor/rails/railties/bin/rails
+END
+plugin
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/nomads/!svn/ver/1/head/vendor/rails/railties/bin/plugin
+END

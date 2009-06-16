@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/nomads/!svn/ver/46/head/app/views/auth
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/nomads/!svn/ver/46/head/app/views/auth/index.html.erb
+END
+forgot_password.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/nomads/!svn/ver/1/head/app/views/auth/forgot_password.html.erb
+END

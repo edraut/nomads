@@ -1,0 +1,11 @@
+<li>
+  <b>Add a fabric:</b><br/>
+	<div class="column span-19 first last">
+  	<div class="column span-2 first text-right">Name:</div>
+ 		<div class="column span-17 last"><%= text_field_tag ("fabric[#{index}][name]") %></div>
+	</div>
+	<div class="column span-19 first last">
+  	<div class="column span-2 first text-right">Description:</div>
+ 		<div class="column span-17 last"><%= text_area_tag "fabric[#{index}][description]", '', :class => 'short_text_area' %></div>
+	</div>
+</li>

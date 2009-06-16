@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/nomads/!svn/ver/29/head/vendor/plugins/attachment_fu/vendor/red_artisan/core_image/filters
+END
+watermark.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/nomads/!svn/ver/29/head/vendor/plugins/attachment_fu/vendor/red_artisan/core_image/filters/watermark.rb
+END
+color.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/nomads/!svn/ver/29/head/vendor/plugins/attachment_fu/vendor/red_artisan/core_image/filters/color.rb
+END
+effects.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/nomads/!svn/ver/29/head/vendor/plugins/attachment_fu/vendor/red_artisan/core_image/filters/effects.rb
+END
+scale.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/nomads/!svn/ver/29/head/vendor/plugins/attachment_fu/vendor/red_artisan/core_image/filters/scale.rb
+END
+quality.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/nomads/!svn/ver/29/head/vendor/plugins/attachment_fu/vendor/red_artisan/core_image/filters/quality.rb
+END
+perspective.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/nomads/!svn/ver/29/head/vendor/plugins/attachment_fu/vendor/red_artisan/core_image/filters/perspective.rb
+END

@@ -1,0 +1,2 @@
+class MensTag < ItemBrowseTag
+end

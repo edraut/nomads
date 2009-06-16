@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/nomads/!svn/ver/64/head/app/views/admin/attachments
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/nomads/!svn/ver/30/head/app/views/admin/attachments/edit.html.erb
+END
+new.html.erb.old
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/nomads/!svn/ver/30/head/app/views/admin/attachments/new.html.erb.old
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/nomads/!svn/ver/30/head/app/views/admin/attachments/index.html.erb
+END
+_edit_li.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nomads/!svn/ver/64/head/app/views/admin/attachments/_edit_li.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/nomads/!svn/ver/30/head/app/views/admin/attachments/new.html.erb
+END
+_new_li.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/nomads/!svn/ver/64/head/app/views/admin/attachments/_new_li.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/nomads/!svn/ver/30/head/app/views/admin/attachments/show.html.erb
+END
+_show_full.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nomads/!svn/ver/64/head/app/views/admin/attachments/_show_full.html.erb
+END
+_show_li.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nomads/!svn/ver/64/head/app/views/admin/attachments/_show_li.html.erb
+END
+_edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/nomads/!svn/ver/64/head/app/views/admin/attachments/_edit.html.erb
+END

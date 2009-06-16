@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/nomads/!svn/ver/64/head/app/views/admin/item_fabrics
+END
+_new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/nomads/!svn/ver/64/head/app/views/admin/item_fabrics/_new.html.erb
+END
+_show_li.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nomads/!svn/ver/64/head/app/views/admin/item_fabrics/_show_li.html.erb
+END
+_edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/nomads/!svn/ver/64/head/app/views/admin/item_fabrics/_edit.html.erb
+END

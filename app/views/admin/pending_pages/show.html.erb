@@ -1,0 +1,7 @@
+<div class="column span-7 first">
+<p>  <%= RedCloth.new( @page.body ).to_html %>
+</p>
+</div>
+<div class="column span-12 last">
+	<%= render :partial => @page.partial %>
+</div>

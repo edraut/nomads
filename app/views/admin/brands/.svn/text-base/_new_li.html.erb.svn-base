@@ -1,0 +1,4 @@
+<p>
+  <b>Add a brand:</b>
+  <%= text_field_tag ('brand[][name]') %>
+</p>

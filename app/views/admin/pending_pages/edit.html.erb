@@ -1,0 +1,27 @@
+<h1>Editing page</h1>
+
+<% form_for([:admin, @page], :html => {:multipart => true}) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= @page.name %>
+  </p>
+  <p>
+    <%= f.label :body %> <span class="small quiet">surround text with underscores to get _italics_ or asterisks to get *bold*</span><br /> 
+    <%= f.text_area :body %>
+  </p>
+	<p>
+		<% 	if @page.page_content_image.nil? 
+			  	@page.page_content_image = PageContentImage.new
+				end
+		%>
+			
+		<label for="page_content_image[uploaded_data]">Content Image</label>
+		
+		<%= render :partial => 'admin/attachments/edit', :object => @page.page_content_image, :locals => {:attachment_type => 'ItemColorPhoto'} %>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+

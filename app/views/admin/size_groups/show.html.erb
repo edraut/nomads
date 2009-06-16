@@ -1,0 +1,15 @@
+&nbsp;<br/>
+<p>
+  <b>Name:</b>
+  <%=h @size_group.name %>
+</p>
+<b>Sizes in this group:</b> <span class="small quiet">drag and drop to sort</span>
+<ul id="size_list">
+<%= render :partial => 'admin/sizes/show_li', :collection => @size_group.sizes %>
+</ul>
+<% javascript_tag do %>
+	function createSortable() {
+	  	Sortable.create('size_list',{onUpdate:function(){new Ajax.Request('/admin/sizes/update', {asynchronous:true, evalScripts:true, parameters:'id=multiple&method=put&' + Sortable.serialize("size_list")})}});
+	}
+	createSortable();
+<% end %>

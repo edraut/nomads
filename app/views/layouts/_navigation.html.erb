@@ -1,0 +1,17 @@
+<div class="container">
+	<div id="nav_left">&nbsp;</div>
+	<div id="nav_right">
+		<% 	nav_id = {}
+		 		Page.find(:all, :order => :position).each do |page|
+					if params[:controller] == 'pages'
+						nav_id[page.name] = (params[:page_name] == page.name) ? 'current_tab' : ''
+					end
+				end
+				nav_id['Shop'] = (params[:controller] == 'items') ? 'current_tab' : ''
+			%>
+		<% if nav_id['Home'] == 'current_tab' %> <%= image_tag 'white_square.gif', {:id => 'white_square'} %> <% end %> <%= link_to 'HOME', home_path, {:id => nav_id['Home']} %> 
+		<% if nav_id['About'] == 'current_tab' %> <%= image_tag 'white_square.gif', {:id => 'white_square'} %> <% end %> <%= link_to 'ABOUT', about_path, {:id => nav_id['About']} %> 
+		<% if nav_id['Shop'] == 'current_tab' %> <%= image_tag 'white_square.gif', {:id => 'white_square'} %> <% end %> <%= link_to 'SHOP', items_path, {:id => nav_id['Shop']} %>
+		<% if nav_id['Contact'] == 'current_tab' %> <%= image_tag 'white_square.gif', {:id => 'white_square'} %> <% end %> <%= link_to 'CONTACT', contact_path, {:id => nav_id['Contact']} %>
+	</div>
+</div>

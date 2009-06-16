@@ -1,0 +1,9 @@
+&nbsp;<br/>
+<p>
+  <b>Name:</b>
+  <%=h @fabric.name %>
+</p>
+<p>
+	<b>Description:</b>
+	<%=h @fabric.description %>
+</p>

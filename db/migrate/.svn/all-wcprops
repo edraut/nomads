@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/nomads/!svn/ver/64/head/db/migrate
+END
+20080608180447_create_item_sizes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nomads/!svn/ver/1/head/db/migrate/20080608180447_create_item_sizes.rb
+END
+20080609194744_create_sessions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/nomads/!svn/ver/1/head/db/migrate/20080609194744_create_sessions.rb
+END
+20080629164036_create_browse_tags.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nomads/!svn/ver/45/head/db/migrate/20080629164036_create_browse_tags.rb
+END
+20080721142233_create_campaign_templates.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/nomads/!svn/ver/59/head/db/migrate/20080721142233_create_campaign_templates.rb
+END
+20080610024433_create_pages.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/nomads/!svn/ver/64/head/db/migrate/20080610024433_create_pages.rb
+END
+20080611184552_create_item_fabrics.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/nomads/!svn/ver/64/head/db/migrate/20080611184552_create_item_fabrics.rb
+END
+20080611182804_create_sizes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/nomads/!svn/ver/26/head/db/migrate/20080611182804_create_sizes.rb
+END
+20080611185219_create_item_browse_tags.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/nomads/!svn/ver/45/head/db/migrate/20080611185219_create_item_browse_tags.rb
+END
+20080611182112_create_size_groups.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nomads/!svn/ver/2/head/db/migrate/20080611182112_create_size_groups.rb
+END
+20080721142338_create_campaigns.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nomads/!svn/ver/59/head/db/migrate/20080721142338_create_campaigns.rb
+END
+20080608182124_create_colors.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/nomads/!svn/ver/1/head/db/migrate/20080608182124_create_colors.rb
+END
+20080608183432_create_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/nomads/!svn/ver/1/head/db/migrate/20080608183432_create_users.rb
+END
+20080721142441_create_campaign_text_blocks.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/nomads/!svn/ver/59/head/db/migrate/20080721142441_create_campaign_text_blocks.rb
+END
+20080608181440_create_attachments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nomads/!svn/ver/1/head/db/migrate/20080608181440_create_attachments.rb
+END
+20080630193715_add_gender_to_item.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nomads/!svn/ver/46/head/db/migrate/20080630193715_add_gender_to_item.rb
+END
+20080611184446_create_fabrics.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/nomads/!svn/ver/40/head/db/migrate/20080611184446_create_fabrics.rb
+END
+20080608175243_create_brands.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/nomads/!svn/ver/28/head/db/migrate/20080608175243_create_brands.rb
+END
+20080611183244_create_items.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/nomads/!svn/ver/28/head/db/migrate/20080611183244_create_items.rb
+END
+20080608182431_create_item_colors.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nomads/!svn/ver/64/head/db/migrate/20080608182431_create_item_colors.rb
+END

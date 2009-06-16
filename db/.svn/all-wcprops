@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/nomads/!svn/ver/64/head/db
+END
+schema.rb
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/nomads/!svn/ver/64/head/db/schema.rb
+END
+development.sqlite3
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/nomads/!svn/ver/1/head/db/development.sqlite3
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/nomads/!svn/ver/64/head/app/views/admin/item_colors
+END
+_new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/nomads/!svn/ver/64/head/app/views/admin/item_colors/_new.html.erb
+END
+_show_li.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nomads/!svn/ver/64/head/app/views/admin/item_colors/_show_li.html.erb
+END
+_edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/nomads/!svn/ver/64/head/app/views/admin/item_colors/_edit.html.erb
+END

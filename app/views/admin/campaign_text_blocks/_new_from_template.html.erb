@@ -1,0 +1,6 @@
+<% block = new_from_template %>
+<p>
+	<b><%= block.name %></b><br/>
+	<%= text_area_tag "campaign_text_blocks[#{block.name}]", block.body, :class => 'short_text_area wide_text_area' %>
+	<%= hidden_field_tag "campaign_text_block_positions[#{block.name}]", block.container_position %>
+</p>

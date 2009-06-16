@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @campaign_text_block.name %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%=h @campaign_text_block.body %>
+</p>
+
+
+<%= link_to 'Edit', edit_campaign_text_block_path(@campaign_text_block) %> |
+<%= link_to 'Back', campaign_text_blocks_path %>

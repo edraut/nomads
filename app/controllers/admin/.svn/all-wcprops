@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/nomads/!svn/ver/92/head/app/controllers/admin
+END
+catalog_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/nomads/!svn/ver/26/head/app/controllers/admin/catalog_controller.rb
+END
+attachments_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nomads/!svn/ver/64/head/app/controllers/admin/attachments_controller.rb
+END
+item_sizes_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nomads/!svn/ver/26/head/app/controllers/admin/item_sizes_controller.rb
+END
+browse_tags_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nomads/!svn/ver/49/head/app/controllers/admin/browse_tags_controller.rb
+END
+item_colors_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nomads/!svn/ver/64/head/app/controllers/admin/item_colors_controller.rb
+END
+campaign_text_blocks_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/nomads/!svn/ver/59/head/app/controllers/admin/campaign_text_blocks_controller.rb
+END
+items_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/nomads/!svn/ver/85/head/app/controllers/admin/items_controller.rb
+END
+administration_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/nomads/!svn/ver/21/head/app/controllers/admin/administration_controller.rb
+END
+item_fabrics_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/nomads/!svn/ver/64/head/app/controllers/admin/item_fabrics_controller.rb
+END
+sizes_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/nomads/!svn/ver/28/head/app/controllers/admin/sizes_controller.rb
+END
+campaign_templates_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/nomads/!svn/ver/59/head/app/controllers/admin/campaign_templates_controller.rb
+END
+users_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/nomads/!svn/ver/1/head/app/controllers/admin/users_controller.rb
+END
+campaigns_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nomads/!svn/ver/85/head/app/controllers/admin/campaigns_controller.rb
+END
+pending_pages_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/nomads/!svn/ver/64/head/app/controllers/admin/pending_pages_controller.rb
+END
+size_groups_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nomads/!svn/ver/59/head/app/controllers/admin/size_groups_controller.rb
+END
+brands_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/nomads/!svn/ver/92/head/app/controllers/admin/brands_controller.rb
+END

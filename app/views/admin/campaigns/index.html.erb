@@ -1,0 +1,20 @@
+<div class="span-19 first last text-right"><%= link_to 'View Instructions for Campaign Monitor','/campaign_monitor_instructions.pdf' %></div>
+<h1>Listing campaigns</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Campaign template</th>
+  </tr>
+
+<% for campaign in @campaigns %>
+  <tr>
+    <td><%=h campaign.name %></td>
+    <td><%=h campaign.campaign_template.name %></td>
+    <td><%= link_to 'Show',[:admin,campaign] %></td>
+    <td><%= link_to 'Edit', edit_admin_campaign_path(campaign) %></td>
+    <td><%= link_to 'Destroy', [:admin,campaign], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+

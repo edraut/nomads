@@ -1,0 +1,24 @@
+&nbsp;<br/>
+
+<div class="column span-19 first last">
+	<div class="column span-15 first"><h1>Fabric List</h1></div>
+	<div class="column span-4 last text-right"></div>
+</div>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+<% for fabric in @fabrics %>
+  <tr>
+    <td><%=h fabric.name %></td>
+    <td><%= link_to 'Show', [:admin,fabric] %></td>
+    <td><%= link_to 'Edit', edit_admin_fabric_path(fabric) %></td>
+    <td><%= link_to 'Destroy', [:admin,fabric], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+

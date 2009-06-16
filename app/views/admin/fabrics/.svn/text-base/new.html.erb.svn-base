@@ -1,0 +1,16 @@
+&nbsp;<br/>
+<h1>New fabric</h1>
+<% form_for([:admin,@fabric]) do |f| %>
+	<p>
+		<ul id="new_fabrics_list">
+			<%= render :partial => 'new_li', :object => Color.new, :locals => {:index => 0}%>
+		</ul>
+	</p>
+	<p>
+		<%= link_to_remote 'Add another fabric', :update => 'new_fabrics_list', :position => :bottom, :url => new_admin_fabric_path, :with => "'partial=true&index=' + $('new_fabrics_list').getElementsByTagName('li').length" %> (keep clicking to add more fabrics)
+	</p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+

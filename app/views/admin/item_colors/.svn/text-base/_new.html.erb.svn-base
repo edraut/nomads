@@ -1,0 +1,4 @@
+<li><b>Color Name</b> <%= text_field_tag "item_colors[#{fake_id}]" %></li>
+<% javascript_tag do %>
+	new Ajax.Updater('new_colors_list','/admin/attachments/new?attachable_type=ItemColor&attachment_type=ItemColorPhoto&attachable_id=' + '<%= fake_id %>' , { insertion : 'bottom' });
+<% end %>

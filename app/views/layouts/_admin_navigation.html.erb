@@ -1,0 +1,106 @@
+<div class="container">
+	<div class="column span-24 first last">
+		<div id="nav_left_admin">Site Administration</div>
+		<div id="nav_right">
+			<div class="column span-12 first">
+				<% 	nav_id = {}
+						catalog_controllers = [	'brands','browse_tags','catalog','items','size_groups']
+						page_controllers = ['pending_pages']
+						campaign_controllers = ['campaigns']
+						admin_controller = params[:controller].sub(/^admin\//,'')
+						if catalog_controllers.include? admin_controller
+							nav_id[:catalog] = 'current_tab'
+							nav_id[:pages] = ''
+						elsif page_controllers.include? admin_controller
+							nav_id[:pages] = 'current_tab'
+							nav_id[:catalog] = ''
+						elsif campaign_controllers.include? admin_controller
+							nav_id[:campaign] = 'current_tab'
+							nav_id[:catalog] = ''
+						end
+					%>
+				<% if nav_id[:pages] == 'current_tab' %> <%= image_tag 'white_square.gif', {:id => 'white_square'} %> <% end %><%= link_to 'Edit Pages', admin_pending_pages_path, :id => nav_id[:pages] %> 
+				<% if nav_id[:catalog] == 'current_tab' %> <%= image_tag 'white_square.gif', {:id => 'white_square'} %> <% end %><%= link_to 'Edit Catalog', admin_catalog_path, :id => nav_id[:catalog] %>
+				<% if nav_id[:campaign] == 'current_tab' %> <%= image_tag 'white_square.gif', {:id => 'white_square'} %> <% end %><%= link_to 'Edit Campaigns', admin_campaigns_path, :id => nav_id[:campaign] %> |
+				<%= link_to 'View Live Site', home_path %>
+			</div>
+			<div class="column span-7 last">
+			<% if ['show','edit'].include? params[:action] %>
+				<% if (params[:controller] == 'admin/pending_pages')%>
+					<div class="column span-3 prepend-1 first">
+						<% if params[:action] == 'show' %>
+						<%= link_to 'Edit this page', edit_admin_pending_page_path(@page) %>
+						<% elsif params[:action] == 'edit' %>
+						<%= link_to 'Show this page', {:action => 'show', :page_name => params[:page_name]} %>
+						<% end %>
+					</div>
+					
+					<% if @page.dirty? %>
+						<div class="column span-2">
+							<%= link_to 'Publish', admin_pending_page_path(@page, :publish => true), :method => :put %>
+						</div>
+						<div class="column span-2 last">
+							<%= link_to 'Revert', admin_pending_page_path(@page, :revert => true), :method => :put %>
+						</div>
+					<% end %>
+				<% end %>
+			<% end %>
+			</div>
+		</div>
+	</div>
+	<% if catalog_controllers.include? admin_controller %>
+		<% 	sub_nav_class = {}
+	 			catalog_controllers.each do |controller|
+					sub_nav_class[controller] = (controller == admin_controller) ? 'admin_sub_nav_active' : 'admin_sub_nav_inactive'
+				end
+	%>
+		<div class="column span-24 first last">&nbsp;</div>
+		<div class="column span-24 first last">
+			<div class="column span-12 first">&nbsp;</div>
+			<div class="column span-3 text-right <%= sub_nav_class['items'] -%> ">
+				<%= link_to 'Manage Items', admin_items_path %>
+			</div>
+			<div class="column span-3 text-right <%= sub_nav_class['size_groups'] %>">
+				<%= link_to 'Manage Sizes', admin_size_groups_path %>
+			</div>
+			<div class="column span-3 text-right <%= sub_nav_class['brands'] %>">
+				<%= link_to 'Manage Brands', admin_brands_path %>
+			</div>
+			<div class="column span-3 last text-right <%= sub_nav_class['browse_tags'] %>">
+				<%= link_to 'Manage Browse', admin_browse_tags_path(:parent_id => 1) %>
+			</div>
+		</div>
+	<% end %>
+	<% if campaign_controllers.include? admin_controller or catalog_controllers.include? admin_controller %>
+		<% unless admin_controller == 'browse_tags' %>
+			<div class="column span-24 first last">&nbsp;</div>
+			<% 	this_controller = params[:controller].sub(/^admin\/|_group/,'').capitalize.singularize
+					third_nav_class = {}
+					actions = ['show','index','new','edit']
+					actions.each do |action|
+						third_nav_class[action] = (params[:action] == action) ? 'third_admin_nav_active' : 'third_admin_nav_inactive'
+					end
+			 %>
+			<div class="column span-24 first last">
+				<div class="column span-15 first">&nbsp;</div>
+				<div class="column span-9 last">
+					<div class="column span-9 first last"><hr/><div>
+					<% if ['show','edit'].include? params[:action] %>
+						<div class="column span-3 first text-right <%= third_nav_class['edit'] -%> ">
+							<%= link_to 'Edit this ' + this_controller.gsub(/_/,' '), {:action => 'edit'} %>
+						</div>
+						<div class="column span-3 text-right <%= third_nav_class['show'] -%> ">
+							<%= link_to 'Show this ' + this_controller.gsub(/_/,' '), {:action => 'show'} %>
+						</div>
+					<% else %>
+						<div class="column span-6 first">&nbsp;</div>
+					<% end %>
+					<div class="column span-3 last text-right <%= third_nav_class['new'] -%> ">
+						<%= link_to 'New ' + this_controller.gsub(/_/,' '), {:action => 'new', :parent_id => params[:parent_id]} %>
+					</div>
+				</div>
+			</div>
+		<% end %>
+	<% end %>
+	
+</div>

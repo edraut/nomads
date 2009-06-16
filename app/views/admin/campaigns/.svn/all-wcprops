@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/nomads/!svn/ver/111/head/app/views/admin/campaigns
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/nomads/!svn/ver/111/head/app/views/admin/campaigns/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/nomads/!svn/ver/107/head/app/views/admin/campaigns/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/nomads/!svn/ver/88/head/app/views/admin/campaigns/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/nomads/!svn/ver/92/head/app/views/admin/campaigns/show.html.erb
+END
