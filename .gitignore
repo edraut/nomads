@@ -1,0 +1,9 @@
+log/*.log
+config/database.yml
+tmp/**/*
+test
+*.DS_Store
+public/system/**/*
+public/system
+public/uploaded_images/**/*
+public/uploaded_images
