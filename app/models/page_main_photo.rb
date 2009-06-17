@@ -4,6 +4,7 @@ class PageMainPhoto < Attachment
                  :storage => :file_system,
                  :max_size => 500.kilobytes,
                  :resize_to => '750x750>',
-                 :path_prefix => 'public/uploaded_images/page_main_photos'
+                 :path_prefix => 'public/uploaded_images/page_main_photos',
+                 :processor => 'ImageScience'
   validates_as_attachment
 end

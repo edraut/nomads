@@ -5,7 +5,8 @@ class ItemColorPhoto < Attachment
                  :max_size => 500.kilobytes,
                  :resize_to => '590x590>',
                  :thumbnails => {:thumb => '80x80>', :medium_thumb => '190x190>'},
-                 :path_prefix => 'public/uploaded_images/item_color_photos'
+                 :path_prefix => 'public/uploaded_images/item_color_photos',
+                 :processor => 'ImageScience'
   validates_as_attachment
 end
   

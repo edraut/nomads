@@ -1,7 +1,7 @@
 require File.join(RAILS_ROOT, 'db','fixture_manifest.rb')
 namespace :db do
   desc "Pretty self explanatory. It erases your entire database and repopulates it."
-  task :wipe_and_load => [ 'db:drop', 'db:create', 'db:schema:load', 'db:wipe_and_load:add_attachments', 'db:wipe_and_load:load_fixtures']
+  task :wipe_and_load => [ 'db:drop', 'db:create', 'db:schema:load', 'db:wipe_and_load:load_fixtures']
 
   namespace :wipe_and_load do
     desc "Populate attached files"

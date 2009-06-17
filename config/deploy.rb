@@ -17,6 +17,7 @@ set :repository,  "git@github.com:edraut/nomads.git"
 set :scm, :git
 set :git_shallow_clone, 1
 set :ssh_options, { :forward_agent => true }
+set :use_sudo, false
 
 set :keep_releases, 2
 
@@ -57,7 +58,7 @@ namespace :config_files do
   task :symlink do
     symlink_database_yml
     symlink_mailer_config
-    # symlink_pictures
+    symlink_pictures
   end
 
   desc "Create database.yml in shared path" 
