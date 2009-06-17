@@ -41,22 +41,22 @@
 	<%= render :partial => 'layouts/' + this_header %>
 	<%= render :partial => 'layouts/' + this_nav %>
 	<div class="container">
-			<% 	if params[:controller] == 'items' %>
-				<div class="column span-5 first">
-					<div id="shop_left_wrapper">
-						<%= image_tag 'Shop_left.jpg' %>
-						<div class="pad_left">
-							<%= render :partial => '/users/new' %>
-						</div>
+		<% 	if params[:controller] == 'items' %>
+			<div class="column span-5 first">
+				<div id="shop_left_wrapper">
+					<%= image_tag 'Shop_left.jpg' %>
+					<div class="pad_left">
+						<%= render :partial => '/users/new' %>
 					</div>
-			<% elsif params[:controller] == 'pages' or (params[:controller] == 'admin/pending_pages' and params[:action] == 'show') %>
-				&nbsp;<br/>
-				<div class="column span-4 append-1 first">
-					<%= render :partial => '/users/new' %>
-			<% else %>
-				<div class="column span-5 first">
-					&nbsp;
-			<% end %>
+				</div>
+		<% elsif params[:controller] == 'pages' or (params[:controller] == 'admin/pending_pages' and params[:action] == 'show') %>
+			&nbsp;<br/>
+			<div class="column span-4 append-1 first">
+				<%= render :partial => '/users/new' %>
+		<% else %>
+			<div class="column span-5 first">
+				&nbsp;
+		<% end %>
 		</div>
 		<% col_span = (params[:controller] == 'items') ? 'span-15' : 'span-19 last'%>
 		<div class="column <%= col_span %>">

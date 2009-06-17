@@ -5,6 +5,7 @@
 	<div class="column span-4 last text-right"></div>
 </div>
 <%= will_paginate @items %>
+<div class="column span-19 first last">
 <table>
   <tr>
     <th><%= link_to 'Name', admin_items_path(:search_terms => params[:search_terms], :order_by => 'lower(name) asc') %></th>
@@ -25,7 +26,7 @@
   </tr>
 <% end %>
 </table>
-
+</div>
 <br />
 
 
