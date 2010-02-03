@@ -3,7 +3,7 @@
 <% Item.find(:all, :conditions => {:home_page_feature => true})[0..2].each_with_index do |featured_item,index| %>
 <div class="column span-4 <%= 'last' if index == 2 %>">
 	<div class="column span-4 first last homepage_featured_item_height">
-		<%= link_to image_tag(featured_item.item_color_photo.public_filename(:medium_thumb), :width => 150), item_path(featured_item) %>
+		<%= link_to image_tag(featured_item.item_color_photo.public_filename(:medium_thumb)), item_path(featured_item) %>
 	</div>
 	<div class="column span-4 first last">
 		<%= link_to featured_item.name, item_path(featured_item), :class => 'quiet_link'%>
